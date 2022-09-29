@@ -1,26 +1,35 @@
 import { Link } from 'react-router-dom'
 import { Navbar, Container } from 'react-bootstrap'
 
-export default function Navigation () {
+export default function Navigation() {
   return (
     <>
-      <Navbar bg='danger' variant='light'>
-        <Container className='justify-content-start'>
-          <Navbar.Brand></Navbar.Brand>
-          {/* Links */}
-          <span class="navbar-text">
-          <Link to='/' className='left text-white ms-3 text-decoration-none'>
-            Home
+      <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              <Link to='/' className='left text-white ms-3 text-decoration-none'>
+              🏠 Home
           </Link>
-          <Link to="/Contact" className="text-white ms-3 text-decoration-none">
+              </li>
+              <li class="nav-item">
+              <Link to="/Contact" className="text-white ms-3 text-decoration-none">
           📙 Contact
           </Link>
-          <Link to="/Happy Cake " className=" text-white ms-3 text-decoration-none ">
-             Happy Cake 🍰
-          </Link>
-              </span>
-        </Container>
-      </Navbar>
+              </li>
+              <li class="nav-item dropdown">
+              </li>
+              </ul>
+            <div class="d-flex">
+              <Link to="/Happy Cake " className=" text-white ms-3 text-decoration-none ">
+                Happy Cake 🍰
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
     </>
   )
 }
