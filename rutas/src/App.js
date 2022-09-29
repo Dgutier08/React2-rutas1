@@ -4,7 +4,6 @@ import Navbar from './components/Navbar'
 
 import Home from './views/Home';
 import Contact from './views/Contact';
-import Login from './views/Login';
 import NotFound from "./views/NotFound";
 //import Contact from "./views/Contact";
 
@@ -19,7 +18,7 @@ function App () {
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
 
-          <Route path="/login" element={<Login />} />
+          
 
           <Route path="*" element={<NotFound />} />
 
